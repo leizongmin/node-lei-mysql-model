@@ -1,7 +1,7 @@
 {
   "name":           "lei-mysql-model",
   "main":           "./lib/index.js",
-  "version":        "0.1.0",
+  "version":        "0.1.1",
   "description":    "Simple MySQL Model",
   "keywords":       ["mysql", "model"],
   "author":         "Zongmin Lei <leizongmin@gmail.com> (http://ucdok.com)",
