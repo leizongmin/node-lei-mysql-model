@@ -19,7 +19,28 @@ var pool = new MySQLPool({
 });
 
 
-var model = 
+var model = MySQLModel.create({
+  connection: pool,
+  table: '数据表名称',
+  primary: '主键',
+  limit: '默认list返回数量',
+  fields: {
+    '字段名': '类型，可选string, number, *, 或通过函数来返回布尔值'
+  },
+  queryFields: ['快速查询的字段'],
+  requiredFields: ['添加记录时必填的字段'],
+  input: function (query, callback, type) { // 格式化输入
+    // query 是输入的参数
+    // callback(null, query); 返回修改后的参数
+    // type 是当前输入类型
+    //    add-添加, update-更新时的查询参数, update2-更新时的数据参数
+    //    get-查询一条记录时的查询参数, list-查询列表时的查询参数
+  },
+  output: function (item, callback) { // 格式化输出，仅get或list时
+    // item 是每行结果
+    // callback(null, item); 返回修改后的结果
+  }
+});
 ```
 
 **自用的东西，可能会随时改动，不建议使用，如果非要使用，一定要指定版本号**
