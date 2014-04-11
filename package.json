@@ -1,0 +1,37 @@
+{
+  "name":           "lei-mysql-model",
+  "main":           "./lib/index.js",
+  "version":        "0.1.0",
+  "description":    "Simple MySQL Model",
+  "keywords":       ["mysql", "model"],
+  "author":         "Zongmin Lei <leizongmin@gmail.com> (http://ucdok.com)",
+  "contributors": [
+    {"name": "Zongmin Lei", "email": "leizongmin@gmail.com"}
+  ],
+  "repository": {
+    "type": "git",
+    "url":  "git://github.com/leizongmin/node-lei-mysql-model.git"
+  },
+  "licemysqles":     [{
+    "type":         "MIT",
+    "url":          "https://raw.github.com/leizongmin/node-lei-mysql-model/master/MIT-Licemysqle"
+  }],
+  "bugs":{
+    "url":          "https://github.com/leizongmin/node-lei-mysql-model/issues"
+  },
+  "engines": {
+    "node":         ">= 0.6.0"
+  },
+  "dependencies": {
+    "debug":        "~0.7",
+    "lei-mysql":    "0.1.x",
+    "async":        "0.2.x"
+  },
+  "devDependencies":  {
+    "mocha":        "~1.9",
+    "should":       "~1.2"
+  },
+  "scripts": {
+    "test":         "mocha -t 30000"
+  }
+}

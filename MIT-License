@@ -1,39 +1,4 @@
-lei-mysql-model
-=======
-
-使用方法：
-
-```javascript
-var MySQLPool = require('lei-mysql');
-var MySQLModel = require('lei-mysql-model');
-
-
-// 创建数据库连接（必须用lei-mysql模块）
-var pool = new MySQLPool({
-  host:     '127.0.0.1',
-  port:     3306,
-  database: 'test',
-  user:     'root',
-  password: '12345'
-  pool:     10
-});
-
-
-var model = 
-```
-
-**自用的东西，可能会随时改动，不建议使用，如果非要使用，一定要指定版本号**
-
-详细使用方法请查看测试文件：https://github.com/leizongmin/node-lei-mysql-model/blob/master/test/test.js
-
-本模块依赖 [lei-mysql](https://github.com/leizongmin/node-lei-mysql)
-
-
-License
-========
-
-```
-Copyright (c) 2013-2014 Zongmin Lei (雷宗民) <leizongmin@gmail.com>
+Copyright (c) 2014 Zongmin Lei (雷宗民) <leizongmin@gmail.com>
 http://ucdok.com
 
 The MIT License
@@ -56,4 +21,3 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
