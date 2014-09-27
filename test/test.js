@@ -120,6 +120,24 @@ describe('Simple MySQL Model', function () {
         });
       },
       function (next) {
+        model.list({}, {limit: 20, offset: 10, order: 'id:asc'}, function (err, list) {
+          should.equal(err, null);
+          list.length.should.equal(20);
+          list[0].id.should.equal(11);
+          list[1].id.should.equal(12);
+          next();
+        });
+      },
+      function (next) {
+        model.list({}, {limit: 20, offset: 10, order: 'id:desc'}, function (err, list) {
+          should.equal(err, null);
+          list.length.should.equal(20);
+          list[0].id.should.equal(INIT_COUNT - 10);
+          list[1].id.should.equal(INIT_COUNT - 11);
+          next();
+        });
+      },
+      function (next) {
         model.count({}, function (err, count) {
           should.equal(err, null);
           count.should.equal(INIT_COUNT);
