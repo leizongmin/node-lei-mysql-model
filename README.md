@@ -1,6 +1,8 @@
 lei-mysql-model
 =======
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/leizongmin/node-lei-mysql-model.svg)](https://greenkeeper.io/)
+
 使用方法：
 
 ```javascript
